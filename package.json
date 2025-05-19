@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.15.1"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}

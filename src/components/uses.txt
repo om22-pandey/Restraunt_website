@@ -1,0 +1,24 @@
+        <datalist id="country">
+          <option value="indian"></option>
+          <option value="Japanese"></option>
+          <option value="Italian"></option>
+          <option value="French"></option>
+          <option value="<Mexican>"></option>
+          <option value="Vegan"></option>
+          <option value="Chinese"></option>
+          <option value="Mediterranean"></option>
+        </datalist>
+
+
+
+const [allRestraunts, setallRestraunts] = useState(restraunts);
+
+function isrestrauntopen(allRestraunts) {
+  var today_day = new Date().toLocaleString('en-us', { weekday: 'long' }).toLowerCase();
+    const filterDay = allRestraunts.filter((restraunt)=>{
+    return restraunt.opening_hours.toLowerCase().includes(today_day.toLowerCase());
+  })
+  return 1;
+}
+inside restrauntcard..............
+{/* <p>{isrestrauntopen(allRestraunts)? "OPEN" : "CLOSE"}</p> */}
