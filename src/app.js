@@ -5,7 +5,7 @@ import Body from "./components/Body.js";
 import { Contact_us } from "./components/contact.js";
 import Footer from "./components/Footer.js";
 
-const Applayout  = () =>
+const App  = () =>
     (
         <>
         <Obj.HeaderComponent/>
@@ -16,6 +16,6 @@ const Applayout  = () =>
     )
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Applayout/>)
+root.render(<App/>)
 
 export default App;
