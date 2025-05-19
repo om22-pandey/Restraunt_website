@@ -1,5 +1,6 @@
 {
   "homepage": "https://om22-pandey.github.io/Restraunt_website",
+
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --dist-dir build --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
